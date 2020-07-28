@@ -123,7 +123,7 @@ client.on('message', (message) => {
     } else {
       message.channel.bulkDelete(parseInt(clearLine)+1)
         .then(() => {
-          AutoMsgDelete(message, `<@${message.author.id}> ` + parseInt(clearLine) + "호랑이다 어흥!");
+          AutoMsgDelete(message, `<@${message.author.id}> ` + parseInt(clearLine) + "번 궁을 썼다냥!");
         })
         .catch(console.error)
     }
